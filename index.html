@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Digital Clock</title>
+     <link rel="shortcut icon" type="x-icon"
+          href="https://e7.pngegg.com/pngimages/558/608/png-clipart-digital-clock-alarm-clock-digital-data-electronic-alarm-clock-electronics-fire-alarm.png">
+     <script src="https://cdn.tailwindcss.com"></script>
+     <script>
+          tailwind.config = {
+               theme: {
+                    extend: {
+                         colors: {
+                              clifford: '#da373d',
+                         }
+                    }
+               }
+          }
+     </script>
+     <script src="script.js"></script>
+</head>
+
+<body>
+     <div class="h-screen w-screen flex flex-col justify-center items-center text-5xl text-yellow-100 font-bold bg-black">
+          <div class="border p-20 bg-slate-900 rounded-md">
+               <div class="border p-10 bg-zinc-900 rounded-md mb-10">
+                    <span id="hour" class="">00</span>
+                    <span class="">:</span>
+                    <span id="minute" class="">00</span>
+                    <span class="">:</span>
+                    <span id="second" class="">00</span>
+                    <span id="session" class="">PM</span>
+               </div>
+               <h1 class="text-center text-2xl text-gray-100">Digital Clock</h1>
+          </div>
+     </div>
+</body>
+
+</html>
